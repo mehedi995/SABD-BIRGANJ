@@ -1,4 +1,29 @@
-;(function($, window, undefined) {
+$(document).ready(function() {
+    var nav = $('.navbar-fixed-top');
+    var distance = $('.navbar-fixed-top').offset();
+    
+    if(distance.top>=300){
+        nav.addClass('effect');
+    }
+    
+    $(window).scroll(function(){
+        var scroll=$(window).scrollTop();
+        
+        if(scroll>=300){
+            nav.addClass('effect');
+        }
+        else{
+            nav.removeClass('effect');
+        }
+    });
+});
+smoothScroll.init({
+    speed:100,
+    easing: 'easeInOutQuad',
+    updateURL: false,
+    offset: '20%'
+});
+(function($, window, undefined) {
 
 	"use strict";
 
