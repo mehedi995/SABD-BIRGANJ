@@ -26,7 +26,7 @@
       </li> 
             
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
       </li>
 
       <li class="nav-item">
@@ -94,7 +94,85 @@
   </head>
 
   <body>
-    
+
+    <div class="container" style="margin-top: 150px ; margin-left: 150px; margin-right: 150px">
+     <form>
+      
+      <div class="form-row">   
+            <div class="form-group col-md-6 ">
+        <label for="inputName">Full Name</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Your Name...">
+      </div>
+      <div class="form-group col-md-6 ">
+        <label for="inputDate">Birth Date</label>
+        <input type="date" class="form-control" id="inputDate" placeholder=" Ex: 16-Nov-1996">
+      </div>
+
+    </div>
+     <div class="form-row"> 
+        <div class="form-group col-md-6 ">
+      <label for="inputRadio1">Gender</label> </br>
+       <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Female</label>
+       </div>
+      </div>
+      <div class="form-group col-md-6">
+          <label for="inputBlood">Blood Group</label>
+          <select id="inputBlood" class="form-control">
+           <option>A (+)</option>
+            <option>A (-)</option>
+            <option>B (+)</option>
+            <option>B (-)</option>
+            <option>AB (+)</option>
+            <option>AB (-)</option>
+            <option>O (+)</option>
+            <option>O (-)</option>
+          </select>
+        </div> 
+    </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputPhone">Phone Number</label>
+          <input type="text" class="form-control" id="inputPhone" placeholder="example: 017...">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+        </div>      
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputInstitution">Institution</label>
+          <input type="text" class="form-control" id="inputInstitution" placeholder="Current University/College...">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputSubject">Subject</label>
+          <input type="text" id="inputSubject" class="form-control" placeholder="Ex: CSE, EEE, Math...">
+          
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputBatch">SSC Batch</label>
+          <input type="text" class="form-control" id="inputBatch" placeholder="2012">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress1"> Present Address</label>
+        <input type="text" class="form-control" id="inputAddress1" placeholder="Ex: Mohammadpur, Dhaka">
+      </div>
+            <div class="form-group">
+        <label for="inputAddress2"> Permenent Address</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Ex: Sujalpur, Birgonj">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Registration</button>
+</form>
+
+  </div>  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
