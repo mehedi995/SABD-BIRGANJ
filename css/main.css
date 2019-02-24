@@ -886,7 +886,7 @@ footer .footer-item .connect-us ul li a:hover {
  */
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
-  content: ".";
+  content: "";
   display: block;
   clear: both;
   visibility: hidden;
